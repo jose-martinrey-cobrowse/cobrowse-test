@@ -12,7 +12,7 @@ spec:
       version: 'latest'
       sourceRef:
         kind: HelmRepository
-        name: podinfo
+        name: podinfo333
         namespace: flux-system
       interval: 10m
   values:
