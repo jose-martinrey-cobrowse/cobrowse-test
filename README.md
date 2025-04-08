@@ -43,5 +43,5 @@ flux create kustomization podinfo \
   --interval=30m \
   --retry-interval=2m \
   --health-check-timeout=3m \
-  --export > ./clusters/my-cluster/podinfo-kustomization.yaml
+  --export > ./clusters/cobrowse-test/podinfo-kustomization.yaml
 ```
