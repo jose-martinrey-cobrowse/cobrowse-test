@@ -26,6 +26,19 @@ spec:
       target:
         name: podinfo
         kind: HorizontalPodAutoscaler
+    - patch: |-
+        apiVersion: apps/v1
+        kind: Deployment
+        metadata:
+          name: podinfo
+        spec:
+          template:
+            spec:
+              volumes:
+                - name: data
+                  persistentVolumeClaim:
+                    claimName: podinfo-claim
+
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
