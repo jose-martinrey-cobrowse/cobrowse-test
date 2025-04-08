@@ -11,7 +11,7 @@ spec:
     branch: main
   secretRef:
     name: flux-system
-  url: ssh://git@github.com/guanana/cobrowse-test
+  url: ssh://git@github.com/jose-martinrey-cobrowse/cobrowse-test
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
