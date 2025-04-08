@@ -11,7 +11,7 @@ spec:
       chart: podinfo
       version: 'latest'
       sourceRef:
-        kind: OCIRepository
+        kind: HelmRepository
         name: podinfo
         namespace: flux-system
       interval: 10m
