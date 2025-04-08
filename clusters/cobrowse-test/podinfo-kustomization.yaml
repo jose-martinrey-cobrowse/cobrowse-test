@@ -15,6 +15,17 @@ spec:
   targetNamespace: cobrowse
   timeout: 3m0s
   wait: true
+  patches:
+    - patch: |-
+        apiVersion: autoscaling/v2
+        kind: HorizontalPodAutoscaler
+        metadata:
+          name: podinfo
+        spec:
+          minReplicas: 3
+      target:
+        name: podinfo
+        kind: HorizontalPodAutoscaler
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
