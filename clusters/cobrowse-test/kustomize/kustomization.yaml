@@ -1,0 +1,14 @@
+patches:
+  - patch: |-
+      - op: remove
+        path: "/spec/template/spec/volumes"
+    target:
+      kind: 'Deployment'
+      name: 'release-name-podinfo'
+
+  - path: deployment.patch.yaml
+    target:
+      kind: 'Deployment'
+      name: 'release-name-podinfo'
+
+namespace: cobrowse
