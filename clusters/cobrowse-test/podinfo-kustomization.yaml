@@ -49,7 +49,7 @@ spec:
                           type: pd-standard
                       spec:
                         accessModes: [ "ReadWriteOnce" ]
-                        storageClassName: "ephemeral-standard"
+                        storageClassName: "pd-standard"
                         resources:
                           requests:
                             storage: 1Gi
