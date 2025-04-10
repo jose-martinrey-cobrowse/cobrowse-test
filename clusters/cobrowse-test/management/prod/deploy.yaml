@@ -5,6 +5,9 @@ metadata:
   name: podinfo
   namespace: flux-system
 spec:
+  securityContext:
+    runAsUser: 100
+    fsGroup: 100
   interval: 30m0s
   path: ./kustomize
   prune: true
