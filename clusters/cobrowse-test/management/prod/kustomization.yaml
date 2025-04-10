@@ -4,6 +4,8 @@ kind: Kustomization
 resources:
   - ../../apps/podinfo
   - ../../storage/base
+  - ns.yaml
+  - pv.yaml
 commonLabels:
   env: prod
 ---
