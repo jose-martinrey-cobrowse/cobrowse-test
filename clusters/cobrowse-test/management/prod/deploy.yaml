@@ -40,10 +40,6 @@ spec:
         spec:
           template:
             spec:
-              containers:
-                - name: podinfo
-                  args:
-                    - "--store"
               volumes:
                 - name: data
                   ephemeral:
